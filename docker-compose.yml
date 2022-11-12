@@ -1,0 +1,12 @@
+
+services:
+    personalblog:
+        container_name: ghost_personal_blog
+        image: ghost:3.20.2
+        restart: always
+        env_file: 
+            - ./generated/personalblog/.env
+        ports:
+            - 127.0.0.1:8080:2368
+        volumes:
+            - ./content:/var/lib/ghost/content
