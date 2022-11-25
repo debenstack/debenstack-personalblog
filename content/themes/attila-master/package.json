@@ -1,11 +1,10 @@
 {
   "name": "attila",
   "description": "Ghost Theme",
-  "demo": "https://attila.zutrinken.com",
-  "version": "1.18.0",
+  "demo": "https://attila.peteramende.de",
+  "version": "3.6.1",
   "engines": {
-    "ghost": ">=2.1.0",
-    "ghost-api": "v2"
+    "ghost": ">=5.0.0"
   },
   "license": "MIT",
   "screenshots": {
@@ -14,8 +13,8 @@
   },
   "author": {
     "name": "Peter Amende",
-    "email": "xoxo@zutrinken.com",
-    "url": "https://zutrinken.com"
+    "email": "hey@peteramende.de",
+    "url": "https://peteramende.de"
   },
   "gpm": {
     "type": "theme",
@@ -34,19 +33,20 @@
     "url": "https://github.com/zutrinken/attila.git"
   },
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
-    "grunt": "^1.0.4",
-    "grunt-contrib-clean": "^1.1.0",
+    "autoprefixer": "^10.4.2",
+    "grunt": "^1.5.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-compress": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-uglify": "^3.3.0",
-    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-postcss": "^0.9.0",
-    "grunt-sass": "^2.1.0",
-    "grunt-zip": "^0.18.1",
-    "load-grunt-tasks": "^3.5.2"
+    "grunt-sass": "^3.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "node-sass": "^7.0.3"
   },
   "config": {
-    "posts_per_page": 10,
+    "posts_per_page": 8,
     "image_sizes": {
       "s": {
         "width": 320
@@ -59,6 +59,27 @@
       },
       "xl": {
         "width": 1920
+      }
+    },
+    "card_assets": true,
+    "custom": {
+      "color_scheme": {
+        "type": "select",
+        "options": [
+          "Light",
+          "Dark",
+          "System"
+        ],
+        "default": "System"
+      },
+      "disqus_shortname": {
+          "type": "text",
+          "default": "",
+          "group": "post"
+      },
+      "darkmode_accent_color": {
+        "type": "color",
+        "default": "#ff6633"
       }
     }
   },

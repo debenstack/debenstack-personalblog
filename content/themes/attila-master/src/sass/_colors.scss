@@ -1,20 +1,31 @@
-$color-white:		#ffffff;
-$color-black:		#000000;
+:root {
+  --color-background-main: #FFF;
+  --color-background-secondary: #F7F8FA;
+  --color-background-contrast: #E1E3E6;
+  --color-background-overlay: rgba(37,40,43,0.9);
+  --color-content-lead: #000;
+  --color-content-main: #222426;
+  --color-content-secondary: #73777D;
+}
 
-$color-gray-98:		#faf9f7; // elements light background
-$color-gray-95:		#f2f2f0; // menu - background
-$color-gray-90:		#e5e4e1; // every elements border
+.theme-dark:root {
+  --color-background-main: #222426;
+  --color-background-secondary: #1D1F20;
+  --color-background-contrast: #3B3D40;
+  --color-background-overlay: rgba(9,10,13,0.9);
+  --color-content-lead: #FFF;
+  --color-content-main: #E1E3E6;
+  --color-content-secondary: #909499;
+}
 
-$color-blue-80:		#c2c7cc; // nav, menu, pagination - button border
-$color-blue-60:		#8a9199; // nav, menu, pagination - button font
-
-$color-blue-30:		#45484d;
-$color-blue-15:		#212226;
-
-$color-yellow-100:	#ffc336;
-$color-red-95:		#f26a3d;
-
-$color-social-twitter:		#3ea9dd;
-$color-social-facebook:		#3c5a98;
-
-$primary-color: $color-red-95; // define primary color
+@media (prefers-color-scheme: dark) {
+  html:not(.theme-light):root {
+    --color-background-main: #222426;
+    --color-background-secondary: #1D1F20;
+    --color-background-contrast: #3B3D40;
+    --color-background-overlay: rgba(9,10,13,0.9);
+    --color-content-lead: #FFF;
+    --color-content-main: #E1E3E6;
+    --color-content-secondary: #909499;
+  }
+}
