@@ -18,7 +18,7 @@ RUN sudo apt update && sudo apt upgrade -y && sudo apt install -y nodejs
 #Configure Ghost
 ENV NODE_ENV production
 ENV GHOST_VERSION 4.48.8
-ENV GHOST_CLI_VERSION latest
+ENV GHOST_CLI_VERSION 1.19.3
 ENV GHOST_DIR /var/lib/ghost
 ENV GHOST_CONTENT_DIR /var/lib/ghost/content
 
